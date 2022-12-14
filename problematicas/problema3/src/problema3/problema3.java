@@ -22,14 +22,14 @@ public class problema3 {
         //   Scanner entrada = new Scanner(System.in);
         //    entrada.useLocale(Locale.US);
         //     jugadores = Integer.parseInt(JOptionPane.showInputDialog("Digite cuantos jugadores va a ingresar:"));
-
+        String mensaje = "";
         double numerador = 5;
         double denominador = 9;
-        System.out.println("Fahrenheit\tCelsius\t");
         for (int n = 20; n < 81; n = n + 4) {
             double c = numerador / denominador * (n - 32);
-            System.out.printf("%d\t\t%.2f\n",n,c );
+            mensaje = String.format("%s\n%d\t\t%.2f\n",mensaje, n, c);
         }
+            System.out.println("Fahrenheit\tCelsius\t"+ mensaje);
 
     }
 
